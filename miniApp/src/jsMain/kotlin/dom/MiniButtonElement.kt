@@ -57,7 +57,7 @@ class MiniButtonElement : MiniElement(NODE_NAME, MiniElementUtil.ELEMENT_NODE) {
     }
 
     private fun bindNativeEvents() {
-        addEventListener("getphonenumber", { event ->
+        addEventListener("bindgetphonenumber", { event ->
             getPhoneNumberCallback?.invoke(event.detail)
         })
     }

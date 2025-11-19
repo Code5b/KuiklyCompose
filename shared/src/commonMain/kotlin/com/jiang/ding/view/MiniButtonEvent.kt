@@ -5,13 +5,13 @@ import com.tencent.kuikly.core.nvi.serialization.json.JSONObject
 
 internal class MiniButtonEvent : ComposeEvent() {
     companion object Companion {
-        const val GET_PHONE_NUMBER = "getPhoneNumber"
+        const val GET_PHONE_NUMBER = "bindgetphonenumber"
     }
 
     /**
      * 获取用户手机号（对应小程序 bindgetphonenumber）
      */
-    fun bindPhoneNumber(handler: (PhoneNumberResult) -> Unit) {
+    fun bindGetPhoneNumber(handler: (PhoneNumberResult) -> Unit) {
         register(GET_PHONE_NUMBER) { params ->
             handler(PhoneNumberResult.decode(params))
         }

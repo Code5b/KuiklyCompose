@@ -28,7 +28,7 @@ fun AppMiniButton(callback: (PhoneNumberResult) -> Unit) {
                 disabled(false)
             }
             it.getViewEvent().run {
-                bindPhoneNumber { result ->
+                bindGetPhoneNumber { result ->
                     it.getViewAttr().disabled(true)
                     callback(result)
                 }

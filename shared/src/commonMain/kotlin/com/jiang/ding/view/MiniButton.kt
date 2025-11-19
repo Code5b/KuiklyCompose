@@ -15,6 +15,12 @@ internal class MiniButton: DeclarativeBaseView<MiniButtonAttr, MiniButtonEvent>(
     override fun viewName(): String {
         return "KRMiniButton"
     }
+
+//    fun bindGetPhoneNumber() {
+//        performTaskWhenRenderViewDidLoad {
+//            renderView?.callMethod(MiniButtonEvent.GET_PHONE_NUMBER)
+//        }
+//    }
 }
 //
 //internal fun ViewContainer<*, *>.MiniButton(init: MiniButton.() -> Unit) {
